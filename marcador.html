@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Marcador - Mente y Gol</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Marcador</h1>
+    <p id="labelTeams" class="small-muted">Equipo A vs Equipo B</p>
+
+    <div style="margin-top:12px">
+      <button class="btn" id="btnElegirMarcador">Elegir marcador (0-6)</button>
+      <button class="btn" id="btnElegirDesenlace">Elegir desenlace (gana/empata/pierde)</button>
+    </div>
+
+    <div id="marcadorContainer" style="margin-top:12px"></div>
+
+    <div id="resultadoMarcador" class="msg" style="margin-top:12px"></div>
+
+    <div style="margin-top:10px">
+      <button class="btn btn-ghost" onclick="location.href='apostar.html'">Volver</button>
+    </div>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>
