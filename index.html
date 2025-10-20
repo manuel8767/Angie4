@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Mente y Gol - Inicio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Mente y Gol</h1>
+    <p class="intro">Mister Wota es un ludópata que le encantan las apuestas. Hoy intentará su suerte en clásicos de fútbol: si acierta gana mucho, si falla pierde todo. ¡Acompáñalo!</p>
+
+    <div style="margin-top:12px">
+      <button class="btn" id="btnIngresar">Ingresar dinero</button>
+      <button class="btn" id="btnApostar">Apostar</button>
+      <button class="btn" id="btnSalir">Salir</button>
+
+    </div>
+
+    <div class="balance-row" style="margin-top:16px">
+      <div>
+        <div class="small-muted">Tu saldo:</div>
+        <b>$<span id="saldoIndex">0.00</span></b>
+      </div>
+      <div class="small-muted">Estado</div>
+    </div>
+
+    <div id="msgIndex" class="msg" style="margin-top:10px"></div>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>
