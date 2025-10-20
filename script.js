@@ -8,7 +8,8 @@
 */
 console.log("script.js cargado correctamente");
 
-(function(){
+document.addEventListener("DOMContentLoaded", function() {
+
   // --- helpers ---
   function $(id){return document.getElementById(id)}
   function toNumber(v){ const n = parseFloat(v); return isNaN(n)? null : n; }
@@ -323,4 +324,4 @@ console.log("script.js cargado correctamente");
   // ----- on index page update display if element present -----
   if($('saldoIndex')){ $('saldoIndex').textContent = getSaldo().toFixed(2); }
 
-})();
+});
