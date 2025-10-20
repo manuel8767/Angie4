@@ -243,7 +243,7 @@ document.addEventListener("DOMContentLoaded", function() {
             final.innerHTML += `<div class="msg error">Perdiste la apuesta. Se ha deducido $${b.toFixed(2)} de tu saldo.</div>`;
           }
           // clear stored bet and selectedMatch after brief pause and go index
-          setTimeout(()=>{ localStorage.removeItem('betAmount'); localStorage.removeItem('selectedMatch'); window.location.href='index.html' }, 2200);
+          setTimeout(()=>{ localStorage.removeItem('betAmount'); localStorage.removeItem('selectedMatch'); window.location.href='index.html' }, 4000);
         });
       });
     }
@@ -315,7 +315,7 @@ document.addEventListener("DOMContentLoaded", function() {
             setSaldo(remaining);
             final.innerHTML = `<div class="msg error">Perdiste. Resultado real: ${actual}. Se dedujo $${b.toFixed(2)}.</div>`;
           }
-          setTimeout(()=>{ localStorage.removeItem('betAmount'); localStorage.removeItem('selectedMatch'); window.location.href='index.html' }, 2000);
+          setTimeout(()=>{ localStorage.removeItem('betAmount'); localStorage.removeItem('selectedMatch'); window.location.href='index.html' }, 4000);
         });
       });
     }
