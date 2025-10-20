@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Ingresar dinero - Mente y Gol</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="tituloDinero">¿Cuánto dinero deseas ingresar?</h1>
+    <p class="small-muted">Ingresa un número positivo (no se aceptan textos ni negativos).</p>
+    <input id="monto" type="number" min="1" placeholder="Ej: 10000">
+    <div style="margin-top:12px">
+      <button class="btn" id="btnAceptar">Aceptar</button>
+      <button class="btn btn-ghost" onclick="location.href='index.html'">Cancelar</button>
+    </div>
+    <div id="msgDinero" class="msg"></div>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>
