@@ -1,0 +1,114 @@
+/* style.css - tema gris moderno para Mente y Gol */
+:root{
+  --bg-1:#2e2e2e;
+  --bg-2:#444444;
+  --card:#3c3c3c;
+  --muted:#6f6f6f;
+  --text:#f2f2f2;
+  --accent:#8b8b8b;
+  --danger:#ff6b6b;
+  --success:#7bd389;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{
+  font-family: "Poppins", "Segoe UI", Roboto, Arial, sans-serif;
+  background: linear-gradient(135deg,var(--bg-1),var(--bg-2));
+  color:var(--text);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+}
+
+/* contenedor centrado */
+.container{
+  width:420px;
+  max-width:95%;
+  background:var(--card);
+  border-radius:14px;
+  padding:28px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.5);
+  text-align:center;
+}
+
+/* tipografías */
+h1{margin:0 0 12px;font-size:1.6rem;color:#efefef}
+p{margin:8px 0;color:#e6e6e6}
+.intro{font-size:0.95rem; color:#dcdcdc;line-height:1.3}
+
+/* botones */
+.btn{
+  display:inline-block;
+  background:var(--accent);
+  color:var(--text);
+  border:none;
+  padding:10px 16px;
+  margin:8px 6px;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:600;
+  transition:transform .12s ease, background .12s ease, opacity .12s ease;
+}
+.btn:hover{transform:translateY(-3px); background:#a3a3a3}
+.btn:active{transform:translateY(0)}
+
+.btn-ghost{
+  background:transparent;border:1px solid rgba(255,255,255,0.06);
+}
+
+/* inputs y select */
+input[type="number"], select{
+  width:85%;
+  padding:10px 12px;
+  border-radius:10px;
+  border:none;
+  background: #515151;
+  color:var(--text);
+  font-size:1rem;
+  margin-top:12px;
+  text-align:center;
+}
+
+/* mensaje de estado */
+.msg{
+  margin-top:14px;
+  min-height:20px;
+  font-weight:600;
+  color:#e7e7e7;
+}
+.msg.error{ color:var(--danger) }
+.msg.success{ color:var(--success) }
+.small{font-size:0.9rem;color:#cfcfcf}
+
+/* marcador layout */
+.marcador{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  margin-top:10px;
+}
+.marcador input{width:80px}
+
+/* bloque disabler look */
+.disabled{
+  opacity:0.52;
+  pointer-events:none;
+  cursor:not-allowed;
+}
+
+/* balance row */
+.balance-row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  margin-top:12px;
+  background: rgba(0,0,0,0.08);
+  padding:10px;
+  border-radius:8px;
+}
+.balance-row b{font-size:1.05rem}
+.small-muted{font-size:0.85rem;color:var(--muted)}
