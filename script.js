@@ -25,7 +25,8 @@ console.log("script.js cargado correctamente");
   if(localStorage.getItem('saldo')===null){ setSaldo(0); }
 
   // ----- INDEX.HTML -----
-  if($('startBtn') || document.body.innerText.includes('Mente y Gol') && document.location.pathname.endsWith('index.html')) {
+  if ($('btnIngresar') || $('btnApostar') || $('btnSalir') || $('saldoIndex') || $('msgIndex')) {
+
     // If index.html exists with our elements:
     const start = $('startBtn');
     const ingresoBtn = $('btnIngresar');
